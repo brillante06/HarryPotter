@@ -1,11 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
-import CardList from './components/CardList'
 import Card from './components/Card'
-
-
-const App: React.FC = () => {
-  return <Card name="hello" image="http://hp-api.herokuapp.com/images/harry.jpg" actor="HarryPotter"/>;
-};
-
+import Routes from './components/Routes'
+import Header from './components/Header'
+const App: React.FC = () => (
+  //  <Card name="harry" actor="Daniel Redcliff" image="http://hp-api.herokuapp.com/images/harry.jpg" />
+  <Routes />
+)
 export default App;

@@ -5,7 +5,6 @@ import {HarryPotter} from '../../image/svg'
 
 const Routes:React.FC = () => (
     <BrowserRouter>
-    <HarryPotter />
         <Switch>
             <Route exact path="/" component={Card} /> 
         </Switch>

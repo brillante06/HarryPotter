@@ -7,6 +7,7 @@ const Container = styled.div`
     justify-content: space-around;
     align-items: flex-start;
     align-content: flex-start;
+    padding: 1rem,0,0,1rem;
 `
 const CardList:FC = ({children}) => (
     <Container>

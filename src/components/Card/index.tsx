@@ -4,9 +4,9 @@ import * as S from './styles'
 import useSWR from 'swr'
 
 interface simpleInfo{
-    name: string;
-    actor: string;
-    image: string;
+    name: string | undefined;
+    actor: string | undefined;
+    image: string | undefined;
 }
 
 const Card:FC<simpleInfo> = ({name,actor,image}) => {

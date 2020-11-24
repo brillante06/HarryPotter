@@ -7,14 +7,15 @@ interface simpleInfo{
     name: string | undefined;
     actor: string | undefined;
     image: string | undefined;
+    onClick?: () => {}
 }
 
-const Card:FC<simpleInfo> = ({name,actor,image}) => {
+const Card:FC<simpleInfo> = ({name,actor,image,onClick}) => {
     return(
-        <S.Container>
+        <S.Container onClick ={onClick}>
             <S.Img src={image}></S.Img>
-            <S.Name>{name}</S.Name>
-            <S.Name>{actor}</S.Name>
+            <S.Name>name: {name}</S.Name>
+            <S.Actor>Actor: {actor}</S.Actor>
         </S.Container>
     )
 }

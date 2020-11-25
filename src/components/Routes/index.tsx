@@ -1,12 +1,13 @@
 import {Redirect, Route, Router, Switch,BrowserRouter} from 'react-router-dom'
 import CardList from '../CardList'
+import Main from '../../pages/main'
 import * as React from 'react'
 import {HarryPotter} from '../../image/svg'
 
 const Routes:React.FC = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={CardList} /> 
+            <Route exact path="/" component={Main} /> 
         </Switch>
     </BrowserRouter>
 )

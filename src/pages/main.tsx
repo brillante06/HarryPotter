@@ -10,11 +10,11 @@ import { HarryPotter } from '../image/svg'
 
 const Main:React.FC = () => { 
     const {data,error} = useSWR<characterInfo[]>("http://hp-api.herokuapp.com/api/characters",fetcher)
-    console.log(data)
 
     if (error) return <div>failed to load</div>
 
     if (!data) return <div>loading...</div>
+    
 
     return (
         <Fragment>

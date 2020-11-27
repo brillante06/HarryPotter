@@ -3,7 +3,7 @@ export type wandInfo = {
     core: string
     length: Number
 }
-interface Character  {
+export interface Character  {
     actor: string
     alive: boolean
     ancestry: boolean

@@ -23,7 +23,7 @@ const Character:React.FC<characterInfo> = ({
     return( 
         <S.Container>
             <S.CharacterNameCase>
-                <S.CharacterName>name</S.CharacterName>
+                <S.CharacterName>{name}</S.CharacterName>
             </S.CharacterNameCase>
         </S.Container>
     )

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    width: 10rem;
-    hegiht: 20rem;
+    width: 50rem;
+    height: 35rem;
     overflow: hidden;
     padding: 0 0 5rem;
     margin: 3rem auto 0;
@@ -12,7 +12,7 @@ export const Container = styled.div`
 `
 
 export const CharacterName = styled.h1`
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
 `

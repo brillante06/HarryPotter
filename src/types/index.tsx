@@ -1,18 +1,18 @@
 export type wandInfo = {
     wood: string
     core: string
-    length: Number
+    length: string
 }
 export interface Character  {
     actor: string
-    alive: boolean
-    ancestry: boolean
-    dateOfBirth: Date
+    alive: string
+    ancestry: string
+    dateOfBirth: string
     eyeColour: string
     gender: "male" | "female"
     hairColour: string
-    hogwartsStaff: boolean
-    hogwartsStudent: boolean
+    hogwartsStaff: Boolean
+    hogwartsStudent: Boolean
     house: string
     image: string
     name: string

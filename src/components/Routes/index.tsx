@@ -3,13 +3,13 @@ import CardList from '../CardList'
 import Main from '../../pages/main'
 import * as React from 'react'
 import {HarryPotter} from '../../image/svg'
-import Character from '../Character'
+import Info from '../Info'
 
 const Routes:React.FC = () => (
     <BrowserRouter>
         <Switch>
             <Route exact path="/" component={Main} /> 
-            <Route path="/:index" component={Character} />
+            <Route path="/info/:id" component={Info} />
         </Switch>
     </BrowserRouter>
 )

@@ -6,7 +6,7 @@ import Routes from './components/Routes'
 import Header from './components/Header'
 import { ThemeProvider } from 'styled-components';
 const App: React.FC = () => (
-  <Main />
+  <Routes />
 )
 
 export default App;

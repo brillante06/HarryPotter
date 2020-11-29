@@ -1,7 +1,7 @@
 import React,{ Fragment, useEffect } from 'react'
 import useSWR from 'swr'
 import Card from '../components/Card'
-import CardList from '../components/CardList'
+import List from '../components/List'
 import Header from '../components/Header' 
 import { fetcher } from '../utils/request'
 import {Character} from '../types/index'
@@ -22,10 +22,10 @@ const Main:React.FC = () => {
 
     return (
         <Fragment>
-            <HarryPotter width="20rem" height="10rem" display="flex" />
-        <CardList>
+            <HarryPotter width="20rem" height="10rem" display="flex"  />
+        <List>
            { data.map(({name,actor,image},index)=> <Card name={name} actor={actor} image={image} key={index} onClick={()=>{click(index)}}></Card>) }
-        </CardList>
+        </List>
         </Fragment>
     )
 }

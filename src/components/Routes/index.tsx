@@ -1,5 +1,4 @@
 import {Redirect, Route, Router, Switch,BrowserRouter} from 'react-router-dom'
-import CardList from '../CardList'
 import Main from '../../pages/main'
 import * as React from 'react'
 import {HarryPotter} from '../../image/svg'

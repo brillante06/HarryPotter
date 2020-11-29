@@ -36,6 +36,17 @@ const Info = ()  => {
             <S.CharacterNameCase>
                 <S.CharacterName>{info.name}</S.CharacterName>
             </S.CharacterNameCase>
+            <S.CharacterInfoContainer>
+                <S.CharacterImage src={info.image}></S.CharacterImage>
+                    <S.InfoContainer>
+                        <S.CharacterInfo>Actor:{info.actor}</S.CharacterInfo>
+                        <S.CharacterInfo>species:{info.species}</S.CharacterInfo>
+                        <S.CharacterInfo>patronus:{info.patronus ? info.patronus : "None"} </S.CharacterInfo>
+                        <S.CharacterInfo>dateOfBirth:{info.dateOfBirth}</S.CharacterInfo>
+                        {/* <S.CharacterInfo>House:{info.house}</S.CharacterInfo>
+                        <S.CharacterInfo>House:{info.house}</S.CharacterInfo> */}
+                </S.InfoContainer> 
+            </S.CharacterInfoContainer>
         </S.Container>
     )
 }

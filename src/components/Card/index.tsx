@@ -14,8 +14,7 @@ const Card:FC<simpleInfo> = ({name,actor,image,onClick}) => {
     return(
         <S.Container onClick={onClick}>
             <S.Img src={image}></S.Img>
-            <S.Name>name: {name}</S.Name>
-            <S.Actor>Actor: {actor}</S.Actor>
+            <S.Name>{name}</S.Name>
         </S.Container>
     )
 }

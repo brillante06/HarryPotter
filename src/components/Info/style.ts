@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    width: 50rem;
-    height: 35rem;
+    width: 50%;
+    height: 10%;
     overflow: hidden;
     padding: 0 0 5rem;
     margin: 3rem auto 0;
@@ -12,8 +12,8 @@ export const Container = styled.div`
 `
 
 export const CharacterInfoContainer = styled.div`
-    width: 40rem;
-    height: 26rem;
+    width: 50%;
+    height: 26%;
     padding: 0 3rem 0; 
     justify-content: space-between;
     flex-direction: row;
@@ -26,12 +26,12 @@ export const CharacterName = styled.h1`
     text-align: center;
 `
 export const InfoContainer = styled.div`
-    width:20rem;
+    width:20%;
     height:26rem;
     display:flex;
     justify-content: space-around;
     flex-direction: column;
-    margin: 0 0 5rem 0;
+    margin: 1rem 0 5rem 0;
     justify-content:space-around;
 `
 export const CharacterNameCase  = styled.div`
@@ -40,9 +40,10 @@ export const CharacterNameCase  = styled.div`
 `
 
 export const CharacterImage = styled.img`
-    padding: 3rem 0 0 0;
-    width: 17rem;
-    height: 17rem;
+    padding: 3rem 0 5rem 0;
+    width: 100%;
+    height: 100%;
+    margin : 0 5rem 0 0;
 `
 export const CharacterInfo = styled.div`
     font-size: 1.4rem;

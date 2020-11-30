@@ -17,10 +17,11 @@ interface simpleInfo{
 }
 
 const Card:FC<simpleInfo> = ({name,image,house,onClick}) => {
+    console.log(typeof(house))
     return(
         <S.Container onClick={onClick} color={house}>
             <S.Img src={image}></S.Img>
-            <S.Name>{name}</S.Name>
+            <S.Name color={house}>{name}</S.Name>
         </S.Container>
     )
 }

@@ -7,8 +7,16 @@ import { fetcher } from '../utils/request'
 import {Character} from '../types/index'
 import { HarryPotter } from '../image/svg'
 import { useHistory,withRouter } from "react-router-dom";
-
-
+import styled from 'styled-components'
+const S = {
+    Img :styled.img`
+    height:10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    `
+}
 const Main:React.FC = () => { 
     const {data,error} = useSWR<Character[]>("http://hp-api.herokuapp.com/api/characters",fetcher)
     const History = useHistory();
@@ -22,7 +30,7 @@ const Main:React.FC = () => {
 
     return (
         <Fragment>
-            <HarryPotter width="20rem" height="10rem" display="flex"  />
+            <S.Img src="https://i.pinimg.com/originals/8b/b3/99/8bb3991dca3078f26bab8d07770f8d33.png"></S.Img>
         <List>
            { data.map(({name,actor,image,house},index)=> <Card name={name} image={image} house={house} key={index} onClick={()=>{click(index)}}></Card>) }
         </List>

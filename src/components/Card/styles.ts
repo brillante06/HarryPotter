@@ -15,17 +15,19 @@ export const Container = styled.div<house>`
     padding: 2rem;
     margin: 0.5rem;
     border: 0.2rem solid;   
+    border-radius: 10%
 `
 export const Img = styled.img`
     width: 10rem;
     height: 10rem; 
     
 `
-export const Name = styled.div`
+export const Name = styled.div<house>`
     font-size: 1.5rem;
     font-family: cursive;
     text-align: center;
     padding: 5rem 0 5rem 0;
+    color: ${(props)=>props.color=='' ? '#1e1e1e' : '#ffffff'};
 `
 
 

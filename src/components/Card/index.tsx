@@ -17,7 +17,6 @@ interface simpleInfo{
 }
 
 const Card:FC<simpleInfo> = ({name,image,house,onClick}) => {
-    console.log(typeof(house))
     return(
         <S.Container onClick={onClick} color={house}>
             <S.Img src={image}></S.Img>

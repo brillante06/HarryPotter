@@ -24,30 +24,30 @@ import * as S from './style'
 interface id{
     id:string
 }
+
 const Info = ()  => {
     const location = useLocation<any>()
     const value:id = useParams()
     const obj = location.state.obj
-    console.log(value.id)
     const info = obj[value.id]
     
     return( 
-        <S.Container>
-            <S.CharacterNameCase>
-                <S.CharacterName>{info.name}</S.CharacterName>
-            </S.CharacterNameCase>
-            <S.CharacterInfoContainer>
-                <S.CharacterImage src={info.image}></S.CharacterImage>
-                    <S.InfoContainer>
-                        <S.CharacterInfo>Actor:{info.actor}</S.CharacterInfo>
-                        <S.CharacterInfo>species:{info.species}</S.CharacterInfo>
-                        <S.CharacterInfo>patronus:{info.patronus ? info.patronus : "None"} </S.CharacterInfo>
-                        <S.CharacterInfo>dateOfBirth:{info.dateOfBirth}</S.CharacterInfo>
-                        {/* <S.CharacterInfo>House:{info.house}</S.CharacterInfo>
-                        <S.CharacterInfo>House:{info.house}</S.CharacterInfo> */}
-                </S.InfoContainer> 
-            </S.CharacterInfoContainer>
-        </S.Container>
+        <S.back>
+            <S.Container color={info.house}>
+                <S.CharacterNameCase>
+                    <S.CharacterName>{info.name}</S.CharacterName>
+                </S.CharacterNameCase>
+                <S.CharacterInfoContainer>
+                    <S.CharacterImage src={info.image}></S.CharacterImage>
+                        <S.InfoContainer>
+                            <S.CharacterInfo>Actor:{info.actor}</S.CharacterInfo>
+                            <S.CharacterInfo>species:{info.species}</S.CharacterInfo>
+                            <S.CharacterInfo>patronus:{info.patronus ? info.patronus : "None"} </S.CharacterInfo>
+                            <S.CharacterInfo>dateOfBirth:{info.dateOfBirth}</S.CharacterInfo>
+                    </S.InfoContainer> 
+                </S.CharacterInfoContainer>
+            </S.Container>
+        </S.back>
     )
 }
 

@@ -11,10 +11,10 @@ export const Container = styled.div<house>`
     height: 20rem;
     flex-direction: column;
     justify-content: space-between;
-    background-color: ${(props)=> props.theme[props.color]};
+    background-color: ${(props)=> props.color=='' ? '#ffffff' : props.theme[props.color]};
     padding: 2rem;
     margin: 0.5rem;
-    border: 0.2rem solid;   
+    border: 0.2rem transparent;   
     border-radius: 10%
 `
 export const Img = styled.img`

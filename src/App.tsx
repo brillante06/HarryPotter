@@ -2,13 +2,12 @@ import React from 'react';
 import logo from './logo.svg';
 import Main from './pages/main'
 import Routes from './components/Routes'
-import Header from './components/Header'
 import { ThemeProvider } from 'styled-components';
 import { Color } from './styles/global';
 const App: React.FC = () => (
   <ThemeProvider theme={Color}>
     <Routes />
-    </ThemeProvider>
+  </ThemeProvider>
 )
 
 export default App;

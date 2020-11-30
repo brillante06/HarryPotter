@@ -24,7 +24,7 @@ const Main:React.FC = () => {
         <Fragment>
             <HarryPotter width="20rem" height="10rem" display="flex"  />
         <List>
-           { data.map(({name,actor,image},index)=> <Card name={name} actor={actor} image={image} key={index} onClick={()=>{click(index)}}></Card>) }
+           { data.map(({name,actor,image,house},index)=> <Card name={name} image={image} house={house} key={index} onClick={()=>{click(index)}}></Card>) }
         </List>
         </Fragment>
     )

@@ -16,17 +16,16 @@ const S = {
     margin-right: auto;
     width: 30%;
     `,
-    back:styled.div`
-    background-color: #ecbb6c;
+    Cotainer:styled.main`
+    background-color: #0c0003;
     min-height: 100%; min-width: 1024px; /* Set up proportionate scaling */ 
     width: 100%; height: auto; /* Set up positioning */
     position: absolute;
+    display:flex;
+    flex-wrap:wrap;
     top: 0;
     left: 0;
     `
-}
-const BackGround = {
-   
 }
 const Main:React.FC = () => { 
     const {data,error} = useSWR<Character[]>("http://hp-api.herokuapp.com/api/characters",fetcher)
@@ -40,16 +39,18 @@ const Main:React.FC = () => {
     }
 
     return (
-        <S.back>
+        <S.Cotainer>
         <ThemeProvider theme={Background}>
         <Fragment>
             <S.Img src="https://i.pinimg.com/originals/8b/b3/99/8bb3991dca3078f26bab8d07770f8d33.png"></S.Img>
-        <List>
-           { data.map(({name,actor,image,house},index)=> <Card name={name} image={image} house={house} key={index} onClick={()=>{click(index)}}></Card>) }
+        <List>{
+         data.map(({name,actor,image,house},index)=>
+            <Card name={name} image={image} house={house} key={index} onClick={()=>{click(index)}}></Card>) 
+            }
         </List>
         </Fragment>
         </ThemeProvider>
-        </S.back>
+        </S.Cotainer>
     )
 }
 

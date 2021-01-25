@@ -2,12 +2,6 @@ import React,{FC, MouseEvent} from 'react'
 import * as Type from '../../types'
 import * as S from './styles'
 import useSWR from 'swr'
-// const Color = {
-//     Gryffindor: '#700d1f',
-//     Slytherin: '#10471d',
-//     Hufflepuff: '#e0b42d',
-//     Ravenclaw: '#013ba7',
-// }
 
 interface simpleInfo{
     name: string;

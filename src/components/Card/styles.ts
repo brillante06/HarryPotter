@@ -5,12 +5,12 @@ interface house{
 }
 
 
-export const Container = styled.div<house>`
+export const Container = styled.div<house>` 
     display: flex;
     width: 10rem;
-    height: 20rem;
+    height: 15rem;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     background-color: ${(props)=> props.color=='' ? '#ffffff' : props.theme[props.color]};
     padding: 2rem;
     margin: 0.5rem;
@@ -26,7 +26,7 @@ export const Name = styled.div<house>`
     font-size: 1.5rem;
     font-family: cursive;
     text-align: center;
-    padding: 5rem 0 5rem 0;
+    padding: 2rem 0 2rem 0;
     color: ${(props)=>props.color=='' ? '#1e1e1e' : '#ffffff'};
 `
 

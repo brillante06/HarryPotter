@@ -1,7 +1,5 @@
-import React,{FC, MouseEvent} from 'react'
-import * as Type from '../../types'
+import React,{FC} from 'react'
 import * as S from './styles'
-import useSWR from 'swr'
 
 interface simpleInfo{
     name: string;

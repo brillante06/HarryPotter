@@ -1,4 +1,4 @@
-import {Redirect, Route, Router, Switch,BrowserRouter} from 'react-router-dom'
+import {Route, Switch,BrowserRouter} from 'react-router-dom'
 import Main from '../../pages/main'
 import * as React from 'react'
 import Info from '../Info'

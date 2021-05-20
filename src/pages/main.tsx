@@ -1,4 +1,4 @@
-import React,{ Fragment, useEffect } from 'react'
+import React,{ Fragment } from 'react'
 import useSWR from 'swr'
 import Card from '../components/Card'
 import List from '../components/List'
